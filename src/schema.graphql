@@ -1,0 +1,17 @@
+# API schema for a simple Blog-post service
+
+type Post {
+    id: ID!
+    createdAt: String!
+    title: String!
+    body: String!
+    authorName: String!
+}
+
+type Query {
+    allPosts: [Post]
+}
+
+type Mutation {
+    createPost(title: String!, body: String!, authorName: String!): Post
+}

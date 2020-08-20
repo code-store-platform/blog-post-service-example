@@ -1,0 +1,11 @@
+serviceId: 0
+
+localConfiguration:
+  database:
+    port: 5432
+    database: database
+    password: password
+    username: postgres
+    host: localhost
+  application:
+    port: 3000
